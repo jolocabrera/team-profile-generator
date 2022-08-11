@@ -2,12 +2,12 @@
 const generateManager = function (manager) {
     return `
     <div class="col-4 mt-4">
-        <div class="card h-100 bg-primary text-white">
-            <div class="card-header">
+        <div class="card h-100">
+            <div class="card-header bg-primary text-white">
                 <h3>${manager.name}</h3>
                 <h4>Manager</h4><i class="material-icons">content_paste</i>
             </div>
-            <div class="card-body bg-light justify-content-center">
+            <div class="card-body bg-light justify-content-center text-black">
                 <p class="id bg-white border m-0 p-2">ID: ${manager.id}</p>
                 <p class="email bg-white border m-0 p-2">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
                 <p class="office bg-white border m-0 p-2">Office Number: ${manager.officeNumber}</p>
@@ -21,12 +21,12 @@ const generateManager = function (manager) {
 const generateEngineer = function (engineer) {
     return `
     <div class="col-4 mt-4">
-        <div class="card h-100 bg-primary text-white">
-            <div class="card-header">
+        <div class="card h-100 ">
+            <div class="card-header bg-primary text-white">
                 <h3>${engineer.name}</h3>
                 <h4>Engineer</h4><i class="material-icons">engineering</i>
             </div>
-            <div class="card-body bg-light justify-content-center">
+            <div class="card-body bg-light justify-content-center text-black">
                 <p class="id bg-white border m-0 p-2">ID: ${engineer.id}</p>
                 <p class="email bg-white border m-0 p-2">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
                 <p class="github bg-white border m-0 p-2">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
@@ -40,12 +40,12 @@ const generateEngineer = function (engineer) {
 const generateIntern = function (intern) {
     return `
     <div class="col-4 mt-4">
-        <div class="card h-100 bg-primary text-white">
-            <div class="card-header">
+        <div class="card h-100 ">
+            <div class="card-header bg-primary text-white">
                 <h3>${intern.name}</h3>
                 <h4>Intern</h4><i class="material-icons">school</i>
             </div>
-            <div class="card-body bg-light justify-content-center">
+            <div class="card-body bg-light justify-content-center text-black">
                 <p class="id bg-white border m-0 p-2">ID: ${intern.id}</p>
                 <p class="email bg-white border m-0 p-2">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
                 <p class="school bg-white border m-0 p-2">School: ${intern.school}</p>
@@ -73,7 +73,7 @@ const generateTeamPage = function (employeeCards) {
   <body>
       <header>
           <nav class="navbar" id="navbar">
-              <span class="navbar-brand mb-0 h1 w-100 text-center" id="navbar-text">Team Profile</span>
+              <span class="navbar-brand py-5 h1 w-100 text-center text-white bg-danger" id="navbar-text">My Team</span>
           </nav>
       </header>
       <main>
